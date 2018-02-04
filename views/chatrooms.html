@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="/css/chatroom.css">
+	<link rel="shortcut icon" type="image/png" href="/images/nakama.ico"/> 
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	
+	<script>
+		var host = '{{config.host}}';
+	</script>
+	<script src="/controllers/chatroom.js"></script>
+</head>
+<body>
+	<div class="cr-container">
+		<h1 class="cr-title">OtakuCHAT</h1>
+		<div class="cr-userbox">
+			<img src="{{user.profilePic}}" class="userPic">
+			<h3 class="userName">{{user.fullname}} | <a href="/logout">Logout</a></h3>
+		</div>
+		<div class="cr-newroom">
+			<input type="text" class="newRoom" autocomplete="off">
+			<button id="create">Create Room</button>
+		</div>
+		<p class="errormessage">Caution! Room Exists!</p>
+		<div class="cr-roomlist">
+			<ul class="roomlist">
+
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

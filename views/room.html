@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+	<link rel="stylesheet" href="/css/room.css">
+	<link rel="shortcut icon" type="image/png" href="/images/nakama.ico"/> 
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+
+	<script>
+		var host = '{{config.host}}',
+			roomNum = '{{room_number}}',
+			userName = '{{user.fullname}}',
+			userPic = '{{user.profilePic}}';
+	</script>
+	<script src="/controllers/room.js"></script>
+</head>
+<body>
+<div class="rm-container">
+		<h1 class="rm-title">OtakuCHAT</h1>
+		<div class="rm-userbox">
+			<img src="{{user.profilePic}}" class="userPic">
+			<h3 class="userName">{{user.fullname}} | <a href="/logout">Logout</a><a href="/chatrooms">More Chatrooms</a></h3>
+		</div>
+		<div class="rm-roomname">
+			<h5>{{title}}</h5>
+		</div>
+		<div class="rm-messages">
+			<ul class="messages">
+			</ul>
+		</div>
+		<div class="rm-users">
+			<ul class="users">
+				
+			</ul>
+		</div>
+		<div class="rm-newmessage">
+			<input type="text" class="newmessage" autocomplete="off" placeholder="Type in your message and press enter !">
+
+		</div>
+	</div>
+</body>
+</html>
