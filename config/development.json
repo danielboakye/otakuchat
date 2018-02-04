@@ -1,5 +1,5 @@
 {
-	"dbURL": "mongodb://<user>:<password>@mlabhost:mlabport/otakuchat",
+	"dbURL": "mongodb://<user>:<password>@<mlabhost>:<mlabport>/otakuchat",
 	"sessionSecret":"sessionSecret",
 	"fb": {
 		"appID": "appID",
