@@ -1,9 +1,9 @@
 {
-	"dbURL": "mongodb://otakuchat_user:joe@ds121898.mlab.com:21898/otakuchat",
-	"sessionSecret":"OnePunchMan",
+	"dbURL": "mongodb://<dbuser>:<dbpassword>@<mlabapphost>:<port>/otakuchat",
+	"sessionSecret":"sessionSecret",
 	"fb": {
-		"appID": "320555931791959",
-		"appSecret": "dc74c9d3dca8075017af7a40e746b4e6",
+		"appID": "appID",
+		"appSecret": "appSecret",
 		"callbackURL": "https://otakuchat.herokuapp.com/auth/facebook/callback"
 	},
 	"host":"https://otakuchat.herokuapp.com"
